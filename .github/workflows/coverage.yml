@@ -1,18 +1,7 @@
 name: Coverage
 
 on:
-  push:
-    branches: [ master, upgrade ]
-    paths:
-      - 'accessors-smart/**'
-      - 'json-smart/**'
-      - '.github/workflows/coverage.yml'
-  pull_request:
-    branches: [ master ]
-    paths:
-      - 'accessors-smart/**'
-      - 'json-smart/**'
-      - '.github/workflows/coverage.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
